@@ -163,14 +163,8 @@
 <v t="amd.20151216001126.1"><vh>md 檔案範例</vh></v>
 <v t="amd.20151215170031.1" a="E"><vh>@path ./../content</vh>
 <v t="amd.20160106093454.1" a="E"><vh>yen 所寫的網誌文章</vh>
-<v t="amd.20160727114506.1" a="E"><vh>201609</vh>
-<v t="leo.20161114160931.1"><vh>@edit 20161114.md</vh></v>
-<v t="leo.20161121151505.1"><vh>@edit 20161121.md</vh></v>
-<v t="leo.20161212140137.1"><vh>@edit 20161205.md</vh></v>
-<v t="leo.20161212141550.1"><vh>@edit 20161212.md</vh></v>
-<v t="leo.20170109115937.1"><vh>@edit 20161219.md</vh></v>
-<v t="leo.20170109120025.1"><vh>@edit 20161226.md</vh></v>
-<v t="leo.20170109141521.1"><vh>@edit 20170109.md</vh></v>
+<v t="amd.20160727114506.1" a="E"><vh>2018</vh>
+<v t="leo.20161114160931.1"><vh>@edit 20181204.md</vh></v>
 </v>
 </v>
 </v>
@@ -310,10 +304,10 @@ print("hello")
 ### 虎科大機械設計工程系
 
 &lt;small&gt;
-Created by [s40523243](http://chiamingyen.github.io/kmolab/blog/)
+Created by [s40523226](http://chiamingyen.github.io/kmolab/blog/)
 &lt;/small&gt;
 
-[s40523243](blog/index.html)
+[s40523226](blog/index.html)
 
 </t>
 <t tx="amd.20161004104641.1">&lt;section data-markdown&gt;
