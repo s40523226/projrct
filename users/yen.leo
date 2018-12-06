@@ -164,7 +164,7 @@
 <v t="amd.20151215170031.1" a="E"><vh>@path ./../content</vh>
 <v t="amd.20160106093454.1" a="E"><vh>yen 所寫的網誌文章</vh>
 <v t="amd.20160727114506.1" a="E"><vh>2018</vh>
-<v t="leo.20161114160931.1"><vh>@edit 20181204.md</vh></v>
+<v t="leo.20161114160931.1"><vh>@edit 20181.md</vh></v>
 </v>
 </v>
 </v>
@@ -442,7 +442,7 @@ QLineEdit#editorLabel {
 }</t>
 <t tx="leo.20151212173315.3">horizontal: body pane to the left
 vertical: body pane on the botton</t>
-<t tx="leo.20151213085727.1">@language python
+<t tx="leo.20151213085727.1">  @language python
 import os
 #os.system("pelican content -o output -s local_publishconf.py -t theme/pelican-bootstrap3")
 os.system("pelican content -o blog -s local_publishconf.py")

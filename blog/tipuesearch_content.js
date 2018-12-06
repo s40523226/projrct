@@ -1,1 +1,1 @@
-var tipuesearch = {"pages":[{"title":"About","text":"2016Fall 修課成員網誌","tags":"misc","url":"./pages/about/"},{"title":"W14","text":"零件繪於onshape 將個3D列印零件繪於onshape","tags":"Course","url":"./w14.html"}]};
+var tipuesearch = {"pages":[{"title":"About","text":"2016Fall 修課成員網誌","tags":"misc","url":"./pages/about/"},{"title":"W14","text":"零件繪於onshape 將個3D列印零件繪於onshape","tags":"Course","url":"./w14.html"},{"title":"專題組裝紀錄","text":"零件繪於onshape","tags":"Course","url":"./zhuan-ti-zu-zhuang-ji-lu.html"}]};
