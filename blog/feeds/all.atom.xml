@@ -127,6 +127,14 @@ if __name__ == '__main__':
 &lt;iframe width="800" height="500" src="https://www.youtube.com/embed/B0_vdv9Cpw0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;h4&gt;影片連結: &lt;a href="https://www.youtube.com/embed/B0_vdv9Cpw0"style="color:blue;"&gt;Python_Call 控制 V-rep&lt;/a&gt;&lt;/h4&gt;
 
+&lt;p&gt;&lt;img alt="" src="https://github.com/s40523226/projrct/blob/gh-pages/photo/p37_22-22-20.png?raw=true"&gt;&lt;/p&gt;
+
+&lt;h4&gt;滑軌接上平移軸使滑塊做線性移動&lt;/h4&gt;
+
+&lt;p&gt;&lt;img alt="" src="https://github.com/s40523226/projrct/blob/gh-pages/photo/p37_22-09-14.png?raw=true"&gt;&lt;/p&gt;
+
+&lt;h4&gt;這是為計算快速，用簡化的塊件代替原本零件做動，但為避免外觀失真將塊件隱藏保留原本零件外觀&lt;/h4&gt;
+
 &lt;hr&gt;
 &lt;p&gt;&lt;pre class="brush: python"&gt;.
 import vrep
