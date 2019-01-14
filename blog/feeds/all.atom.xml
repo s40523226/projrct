@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>2016Fall CPA 課程網誌 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2018-11-27T12:00:00+08:00</updated><entry><title>Arduino實體控制</title><link href="./arduinoshi-ti-kong-zhi.html" rel="alternate"></link><published>2018-11-27T12:00:00+08:00</published><updated>2018-11-27T12:00:00+08:00</updated><author><name>40523226</name></author><id>tag:None,2018-11-27:./arduinoshi-ti-kong-zhi.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
-&lt;iframe width="800" height="500" src="https://www.youtube.com/embed/B0_vdv9Cpw0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;h4&gt;Arduino馬達控制&lt;h4/&gt;
 
-&lt;pre class="brush: python"&gt;.
+&lt;iframe width="800" height="500" src="https://www.youtube.com/watch?v=of33uRlKPXA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</content><category term="Brython"></category></entry><entry><title>V-rep虛擬控制</title><link href="./v-repxu-ni-kong-zhi.html" rel="alternate"></link><published>2018-11-20T12:00:00+08:00</published><updated>2018-11-20T12:00:00+08:00</updated><author><name>40523226</name></author><id>tag:None,2018-11-20:./v-repxu-ni-kong-zhi.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;h4&gt;用python導入V-rep，控制3D列印機的噴嘴&lt;h4/&gt;
+
+&lt;iframe width="800" height="500" src="https://www.youtube.com/embed/B0_vdv9Cpw0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;h4&gt;影片連結: &lt;a href="https://www.youtube.com/embed/B0_vdv9Cpw0"style="color:blue;"&gt;Python_Call 控制 V-rep&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;img alt="" src="https://github.com/s40523226/projrct/blob/gh-pages/photo/p37_22-22-20.png?raw=true"&gt;&lt;/p&gt;
+
+&lt;h4&gt;滑軌接上平移軸使滑塊做線性移動&lt;/h4&gt;
+
+&lt;p&gt;&lt;img alt="" src="https://github.com/s40523226/projrct/blob/gh-pages/photo/p37_22-09-14.png?raw=true"&gt;&lt;/p&gt;
+
+&lt;h4&gt;這是為計算快速，用簡化的塊件代替原本零件做動，但為避免外觀失真將塊件隱藏保留原本零件外觀&lt;/h4&gt;
+
+&lt;pre class="brush: python"&gt;
 import vrep
 from math import sqrt, pi
 from time import sleep
@@ -120,129 +135,7 @@ def main():
 
 if __name__ == '__main__':
     main()
-&lt;/pre&gt;</content><category term="Brython"></category></entry><entry><title>V-rep虛擬控制</title><link href="./v-repxu-ni-kong-zhi.html" rel="alternate"></link><published>2018-11-20T12:00:00+08:00</published><updated>2018-11-20T12:00:00+08:00</updated><author><name>40523226</name></author><id>tag:None,2018-11-20:./v-repxu-ni-kong-zhi.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
-
-&lt;h4&gt;用python導入V-rep，控制3D列印機的噴嘴&lt;h4/&gt;
-
-&lt;iframe width="800" height="500" src="https://www.youtube.com/embed/B0_vdv9Cpw0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;h4&gt;影片連結: &lt;a href="https://www.youtube.com/embed/B0_vdv9Cpw0"style="color:blue;"&gt;Python_Call 控制 V-rep&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;&lt;img alt="" src="https://github.com/s40523226/projrct/blob/gh-pages/photo/p37_22-22-20.png?raw=true"&gt;&lt;/p&gt;
-
-&lt;h4&gt;滑軌接上平移軸使滑塊做線性移動&lt;/h4&gt;
-
-&lt;p&gt;&lt;img alt="" src="https://github.com/s40523226/projrct/blob/gh-pages/photo/p37_22-09-14.png?raw=true"&gt;&lt;/p&gt;
-
-&lt;h4&gt;這是為計算快速，用簡化的塊件代替原本零件做動，但為避免外觀失真將塊件隱藏保留原本零件外觀&lt;/h4&gt;
-
-&lt;hr&gt;
-&lt;p&gt;&lt;pre class="brush: python"&gt;.
-import vrep
-from math import sqrt, pi
-from time import sleep&lt;/p&gt;
-&lt;p&gt;def hypot_3d(x, y, z):
-    return sqrt(x * x + y * y + z * z)&lt;/p&gt;
-&lt;p&gt;def get_pos(clientID, handle):
-    return vrep.simxGetObjectPosition(clientID, handle, -1, vrep.simx_opmode_oneshot_wait)&lt;/p&gt;
-&lt;p&gt;def set_pos(x, y, z, clientID, handle):
-    vrep.simxSetObjectPosition(clientID, handle, -1, (x, y, z), vrep.simx_opmode_oneshot_wait)&lt;/p&gt;
-&lt;p&gt;def walk_to(wx, wy, wz, clientID, handle):
-    ok, (ox, oy, oz) = get_pos(clientID, handle)
-    walk_with(wx - ox, wy - oy, wz - oz, clientID, handle)&lt;/p&gt;
-&lt;p&gt;def walk_with(dx, dy, dz, clientID, handle):
-    d = hypot_3d(dx, dy, dz)
-    # 移動量
-    tx = dx / d
-    ty = dy / d
-    tz = dz / d
-    # EX. 馬達脈波:  移動量(mm) / 馬達單圈移動量(mm) x 360(deg) / 步數(step)
-    # EX. conversion = 1000 / (12 * pi) * (360 / 200)
-    conversion = 1000 / (12 * pi) * 360
-    cx = dx * conversion
-    cy = dy * conversion
-    cz = dz * conversion&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# EX. 單步移動量step = 12 * 0.001 * pi / 200(step)
-step = 0.01
-ds = d // step
-for i in range(int(ds)):
-    ok, pos = get_pos(clientID, handle)
-    if ok == vrep.simx_return_ok:
-        x, y, z = pos
-        set_pos(x + tx * step, y + ty * step, z + tz * step, clientID, handle)
-
-# 補正誤差值        
-fx = dx % step
-fy = dy % step
-fz = dz % step        
-ok, pos = get_pos(clientID, handle)
-if ok == vrep.simx_return_ok:
-    x, y, z = pos
-    print(&amp;#39;StepMotor_X :&amp;#39;, round(cx, 4), &amp;#39;deg&amp;#39;)
-    print(&amp;#39;StepMotor_Y :&amp;#39;, round(cy, 4), &amp;#39;deg&amp;#39;)
-    print(&amp;#39;StepMotor_Z :&amp;#39;, round(cz, 4), &amp;#39;deg&amp;#39;)
-    set_pos(x + fx, y + fy, z + fz, clientID, handle)
-    #self.translateShow.addItem(&amp;quot;(X: {:.04f},Y: {:.04f},Z: {:.04f})&amp;quot;.format(a2z, b2z, c2z))
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;def m_path(number, clientID, Cub1_handle):
-    #每10單位,距離走0.15
-    step = 0
-    for step_init, step_interval, func in [
-        (0, 1, lambda: (0, 0.015 * step, 0.05)),
-        (0, 1, lambda: (0.0075 * step, 0.015 * number - 0.01 * step, 0.05)),
-        (0, 1, lambda: (0.0075 * number + 0.0075 * step, 0.005 * number + 0.01 * step, 0.05)),
-        (number, -1, lambda: (0.015 * number, 0.015 * step, 0.05)),
-    ]:
-        step = step_init
-        for i in range(number):
-            step += step_interval
-            #returnCode,data=vrep.simxGetIntegerParameter(clientID,vrep.sim_intparam_mouse_x,vrep.simx_opmode_buffer) # Try to retrieve the streamed data
-            returncode_pos, data_pos = vrep.simxGetObjectPosition(clientID, Cub1_handle, -1, vrep.simx_opmode_oneshot_wait)
-            if returncode_pos == vrep.simx_return_ok:
-                # After initialization of streaming, it will take a few ms before the first value arrives, so check the return code
-                x, y, z = data_pos
-                vrep.simxSetObjectPosition(clientID, Cub1_handle, -1, func(), vrep.simx_opmode_oneshot_wait)&lt;/p&gt;
-&lt;p&gt;def main():
-    vrep.simxFinish(-1)
-    clientID = vrep.simxStart('127.0.0.1', 19997, True, True, 5000, 5)
-    if clientID == -1:
-        print ('Failed connecting to remote API server')
-        return&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;print (&amp;#39;Connected to remote API server&amp;#39;)
-# Now try to retrieve data in a blocking fashion (i.e. a service call):
-res, objs = vrep.simxGetObjects(clientID, vrep.sim_handle_all, vrep.simx_opmode_blocking)
-if res == vrep.simx_return_ok:
-    print (&amp;#39;Number of objects in the scene:&amp;#39;, len(objs))
-else:
-    print (&amp;#39;Remote API function call returned with error code:&amp;#39;, res)
-
-sleep(2) 
-# Now retrieve streaming data (i.e. in a non-blocking fashion):
-vrep.simxGetIntegerParameter(clientID,vrep.sim_intparam_mouse_x,vrep.simx_opmode_streaming) # Initialize streaming
-err, Cub1_handle = vrep.simxGetObjectHandle(clientID, &amp;quot;Cub1&amp;quot;, vrep.simx_opmode_oneshot_wait)
-err, nozzle_handle = vrep.simxGetObjectHandle(clientID, &amp;quot;nozzle&amp;quot;, vrep.simx_opmode_oneshot_wait)
-
-# M path
-# m_path(30, clientID, Cub1_handle)
-#walk_to(0, 0, 0.5, clientID, Cub1_handle)
-# walk_with(1, 0, 0, clientID, Cub1_handle)
-#walk_with(-0.3, -0.5, 0, clientID, Cub1_handle)
-walk_with(-0.3, -0.3, 0, clientID, Cub1_handle)
-walk_with(0.3, 0.3, 0, clientID, Cub1_handle)
-
-# Now send some data to V-REP in a non-blocking fashion:
-vrep.simxAddStatusbarMessage(clientID, &amp;#39;Hello V-REP!&amp;#39;, vrep.simx_opmode_oneshot)
-# Before closing the connection to V-REP, make sure that the last command sent out had time to arrive. You can guarantee this with (for example):
-vrep.simxGetPingTime(clientID)
-# Now close the connection to V-REP:
-vrep.simxFinish(clientID)
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;if &lt;strong&gt;name&lt;/strong&gt; == '&lt;strong&gt;main&lt;/strong&gt;':
-    main()
-&lt;/pre&gt;&lt;/p&gt;</content><category term="Brython"></category></entry><entry><title>專題組裝紀錄</title><link href="./zhuan-ti-zu-zhuang-ji-lu.html" rel="alternate"></link><published>2018-11-13T12:00:00+08:00</published><updated>2018-11-13T12:00:00+08:00</updated><author><name>40523226</name></author><id>tag:None,2018-11-13:./zhuan-ti-zu-zhuang-ji-lu.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+&lt;/pre&gt;</content><category term="Brython"></category></entry><entry><title>專題組裝紀錄</title><link href="./zhuan-ti-zu-zhuang-ji-lu.html" rel="alternate"></link><published>2018-11-13T12:00:00+08:00</published><updated>2018-11-13T12:00:00+08:00</updated><author><name>40523226</name></author><id>tag:None,2018-11-13:./zhuan-ti-zu-zhuang-ji-lu.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;h4&gt;鋁擠製組合&lt;h4/&gt;
 
