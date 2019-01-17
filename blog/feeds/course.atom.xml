@@ -7,7 +7,11 @@
 &lt;iframe width="800" height="400" src="https://www.youtube.com/embed/of33uRlKPXA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;h4&gt;解決轉動時馬達震動過大，找到加速度設定過大，同時可以控制轉的圈數來移動距離&lt;h4/&gt;
-&lt;iframe width="800" height="400" src="https://www.youtube.com/embed/TNzToIqLJIU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</content><category term="Brython"></category></entry><entry><title>V-rep虛擬控制</title><link href="./v-repxu-ni-kong-zhi.html" rel="alternate"></link><published>2018-11-20T12:00:00+08:00</published><updated>2018-11-20T12:00:00+08:00</updated><author><name>40523226</name></author><id>tag:None,2018-11-20:./v-repxu-ni-kong-zhi.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+&lt;iframe width="800" height="400" src="https://www.youtube.com/embed/TNzToIqLJIU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;iframe width="800" height="400" src="https://www.youtube.com/embed/xAjvf42wCvI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h4&gt;測試x軸行程約740mm，和返回x軸原點時極限開關測試&lt;h4/&gt;
+&lt;iframe width="800" height="400" src="https://www.youtube.com/embed/DXeOQVjMImg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</content><category term="Brython"></category></entry><entry><title>V-rep虛擬控制</title><link href="./v-repxu-ni-kong-zhi.html" rel="alternate"></link><published>2018-11-20T12:00:00+08:00</published><updated>2018-11-20T12:00:00+08:00</updated><author><name>40523226</name></author><id>tag:None,2018-11-20:./v-repxu-ni-kong-zhi.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;h4&gt;滑軌接上平移軸使滑塊做線性移動&lt;/h4&gt;
 
@@ -152,4 +156,8 @@ if __name__ == '__main__':
 
 &lt;h4&gt;x、y軸滑軌和光軸的組裝&lt;h4/&gt;
 
-&lt;img src="https://github.com/s40523226/projrct/blob/gh-pages/photo/49436005_2215875102005050_5364848043185143808_n.jpg?raw=true" alt="組裝-2" title="www.ytrepeat.com/" border="100" width=" 1000px" height="500px"&gt;&lt;/a&gt;</content><category term="Brython"></category></entry></feed>
+&lt;img src="https://github.com/s40523226/projrct/blob/gh-pages/photo/49436005_2215875102005050_5364848043185143808_n.jpg?raw=true" alt="組裝-2" title="www.ytrepeat.com/" border="100" width=" 1000px" height="500px"&gt;&lt;/a&gt;
+
+&lt;h4&gt;馬達驅動器設置&lt;h4/&gt;
+
+&lt;img src="https://github.com/s40523226/projrct/blob/gh-pages/photo/IMG_2849.JPG?raw=true" alt="組裝-2" title="www.ytrepeat.com/" border="100" width=" 1000px" height="500px"&gt;&lt;/a&gt;</content><category term="Brython"></category></entry></feed>
